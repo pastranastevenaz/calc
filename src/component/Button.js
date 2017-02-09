@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {
+  Component,
+  PropTypes } from 'react';
 
 export default class Button  extends Component{
   render(){
     return(
       <button>
-      9
+        {this.props.name}
       </button>
     );
   }
 }
+Button.proptypes = {
+  name:PropTypes.string,
+};

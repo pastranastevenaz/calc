@@ -1,13 +1,18 @@
-import react from 'react';
+import React, {
+  Component,
+  PropTypes } from 'react';
 
 export default class Display extends Component{
   render(){
     return(
       <div>
         <div>
-         117
+         {this.props.value}
         </div>
       </div>
-    )
+    );
   }
 }
+Display.proptypes = {
+  value:PropTypes.string
+};
