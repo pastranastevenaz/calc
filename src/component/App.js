@@ -1,10 +1,13 @@
 import React from 'react';
+import Display from './Display';
+import ButtonPanel from './ButttonPanel';
 
 export default class App extends Component{
   render(){
     return(
       <div>
-        Hello from App.js
+        <Display />
+        <ButtonPanel />
       </div>
     );
   }
