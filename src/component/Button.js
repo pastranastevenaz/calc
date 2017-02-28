@@ -6,7 +6,7 @@ export default class Button  extends Component{
 
   //click event handler
   handleClick = () => {
-    console.log('click');
+    this.props.clickHandler(this.props.name);
   }
 
   render(){
@@ -18,6 +18,7 @@ export default class Button  extends Component{
     );
   }
 }
-Button.proptypes = {
+Button.propTypes = {
   name:PropTypes.string,
+  clickHandler: React.PropTypes.func,
 };

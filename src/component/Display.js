@@ -13,6 +13,6 @@ export default class Display extends Component{
     );
   }
 }
-Display.proptypes = {
+Display.propTypes = {
   value:PropTypes.string
 };
