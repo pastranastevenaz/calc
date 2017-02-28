@@ -3,9 +3,16 @@ import React, {
   PropTypes } from 'react';
 
 export default class Button  extends Component{
+
+  //click event handler
+  handleClick = () => {
+    console.log('click');
+  }
+
   render(){
     return(
-      <button>
+      <button
+        onClick={this.handleClick}>
         {this.props.name}
       </button>
     );
