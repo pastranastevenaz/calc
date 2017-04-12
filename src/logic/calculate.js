@@ -50,7 +50,7 @@ export default function calculate(obj, buttonName){
         }
         return { next: obj.next + '.'};
       }
-      if (obk.operation) {
+      if (obj.operation) {
         return { next: '0.'};
       }
       if (obj.total){

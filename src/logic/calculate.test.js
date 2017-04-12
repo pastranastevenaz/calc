@@ -78,6 +78,6 @@ it('should support 3 + = 3 =', () =>{
   //if '=' is pressed without enough info
   // the '=' should be disregarded
   expectButtons(['3','+','=','3','='],{
-    total: '6'
+    total: '6',
   });
 });
