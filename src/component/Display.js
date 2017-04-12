@@ -5,7 +5,7 @@ import React, {
 export default class Display extends Component{
   render(){
     return(
-      <div>
+      <div className="component-display">
         <div>
          {this.props.value}
         </div>
